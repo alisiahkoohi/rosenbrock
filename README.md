@@ -1,6 +1,6 @@
 # Rosenbrock distribution
 
-This repository implements the [Rosenbrock distribution](https://arxiv.org/pdf/1903.09556.pdf), including unnormalized density and analytic sampler
+This repository implements the multidimensional [Rosenbrock distribution](https://arxiv.org/pdf/1903.09556.pdf), including unnormalized density and analytic sampler
 
 
 ## Installation
