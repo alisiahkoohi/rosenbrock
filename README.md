@@ -8,7 +8,7 @@ This repository implements the multidimensional [Rosenbrock distribution](https:
 You can install the package via:
 
 ```bash
-git clone https://github.gatech.edu/asiahkoohi3/rosenbrock
+git clone https://github.com/alisiahkoohi/rosenbrock
 cd rosenbrock
 pip install -e .
 ```
