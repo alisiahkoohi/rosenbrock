@@ -12,7 +12,7 @@ setuptools.setup(
     description="Rosenbrock distribution, including unnormalized density and analytic sampler",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.gatech.edu/asiahkoohi3/rosenbrock",
+    url="https://github.com/alisiahkoohi/rosenbrock",
     license='MIT',
     install_requires=reqs,
     packages=setuptools.find_packages()
