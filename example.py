@@ -21,7 +21,7 @@ if __name__ == '__main__':
     rosen_dist = rosenbrock.RosenbrockDistribution(mu, a, b, device=device)
 
     # Sample the distribution
-    samples = rosen_dist.sample(int(5e4))
+    samples = rosen_dist.sample(int(5e3))
 
     # Compute negative-log of the density function for the samples
     nl_pdf = rosen_dist.nl_pdf(samples)
