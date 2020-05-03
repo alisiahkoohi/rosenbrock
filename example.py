@@ -1,6 +1,6 @@
 import torch
 import numpy as np
-from rosenbrock.dist import *
+from rosenbrock.distribution import *
 import matplotlib.pyplot as plt
 
 if not torch.cuda.is_available():
