@@ -1,6 +1,6 @@
 import torch
 import numpy as np
-from rosenbrock.distribution import *
+from rosenbrock import rosenbrock
 import matplotlib.pyplot as plt
 
 if not torch.cuda.is_available():
@@ -18,7 +18,7 @@ if __name__ == '__main__':
     b = torch.ones([2, 1], device=device)
 
     # Define the distribution
-    rosen_dist = RosenbrockDistribution(mu, a, b, device=device)
+    rosen_dist = rosenbrock.RosenbrockDistribution(mu, a, b, device=device)
 
     # Sample the distribution
     samples = rosen_dist.sample(int(5e3))

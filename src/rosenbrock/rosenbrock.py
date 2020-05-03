@@ -8,9 +8,9 @@ class RosenbrockDistribution(object):
     Based on https://arxiv.org/pdf/1903.09556.pdf
 
     Arguments:
-        mu (torch.Tensor): the mean parameter, :math:`\mu \in \mathbb{R}`
-        a (torch.Tensor): the precision parameter. :math:`\mu \in \mathbb{R}^{+}`
-        b (torch.Tensor): Rosenbrock coefficients. :math:`\b_{i,j} \in \mathbb{R}^{+}`
+        mu (torch.Tensor): the mean parameter, `\mu \in \mathbb{R}`
+        a (torch.Tensor): the precision parameter. `\mu \in \mathbb{R}^{+}`
+        b (torch.Tensor): Rosenbrock coefficients. `\b_{i,j} \in \mathbb{R}^{+}`
         device (torch.Tensor): Device—e.g., 'cpu' or 'cuda'
     """
     def __init__(self, mu, a, b, device='cpu'):
@@ -23,7 +23,7 @@ class RosenbrockDistribution(object):
         assert a.data > 0.0 and (b.data > 0.0).all(), \
             "a and b need to be posititve"
 
-        # This will output samples with dimension (n1-1)n2 + 1        
+        # This will output samples with dimension (n1-1)n2 + 1
         self.n1, self.n2 = b.shape[0], b.shape[1]
 
         self.mu = mu

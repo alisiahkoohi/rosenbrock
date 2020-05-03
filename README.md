@@ -18,7 +18,7 @@ pip install -e .
 For samples from a 2D Rosenbrock distribution, run:
 
 ```
-python example.py
+python example/example.py
 ```
 
 ![](figs/samples.png)
